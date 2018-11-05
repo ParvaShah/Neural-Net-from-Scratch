@@ -22,7 +22,9 @@ def create_layer_and_neurons(n):
         #print('tw',total_weights)
        
         nedict={i:n[i] for i in range(num_layers)}  
-        print(nedict)
+        
+		
+		#print(nedict)
         
     from random import random
     #seed(1)
@@ -38,7 +40,8 @@ def create_layer_and_neurons(n):
     
     bwgt=[]
     for i in range(num_layers-1):
-        bwgt.append(round(random(),4))
+        
+		bwgt.append(round(random(),4))
     
     start=0
     t=0
