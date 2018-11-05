@@ -8,9 +8,11 @@ Created on Thu Sep 27 09:27:07 2018
 
 import math as m
 
+
 def create_layer_and_neurons(n):
     
-    num_layers=len(n)
+    
+	num_layers=len(n)
     
    
    
@@ -20,9 +22,10 @@ def create_layer_and_neurons(n):
         #print('tw',total_weights)
        
         nedict={i:n[i] for i in range(num_layers)}  
-        #print(nedict)
+        print(nedict)
         
     from random import random
+    #seed(1)
     x=[]
     for i in range(total_weights):
         x.append(round(random(),4))
